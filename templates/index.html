@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block main %}
+    <main>
+        <div class="welcomeCarusel">
+            <div>
+                <img src="../static/media/composition-with-packets-of-lays-potato-chips-2PPJ24E.jpg" alt="">
+            </div>
+            <div>
+                <img src="../static/media/food-table-1j6ik0elenqlwh4k.jpg" alt="">
+            </div>
+            <div>
+                <img src="../static/media/wp9472627.webp" alt="">
+            </div>
+        </div>
+        <div class="contentHead">
+            <p>{% trans 'Yeni gələn məhsullar' %}</p>
+            <a href="#">{% trans 'Bütün məhsullar' %} <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        {% include './addons/listcard.html' %}
+        <div class="contentHead">
+            <p>{% trans 'Bölmələr' %}</p>
+            <a href="#">{% trans 'Bütün məhsullar' %} <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        <div class="categories">
+            {% for post in categories %}
+                <div>
+                    <a href="{% url 'categoriesdetail' post.id %}">
+                        <div class="category">
+                            <div class="img">
+                                <img src="{{post.icon}}" alt="icon">
+                            </div>
+                            <div class="name">{{post.name}}</div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="contentHead">
+            <p>{% trans 'Ən çox satılanlar' %}</p>
+            <a href="#">{% trans 'Bütün məhsullar' %} <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        <div class="brandsBlock">
+            <div>
+                <img src="../static/media/composition-with-packets-of-lays-potato-chips-2PPJ24E.jpg" alt="">
+            </div>
+            <div>
+                <img src="../static/media/food-table-1j6ik0elenqlwh4k.jpg" alt="">
+            </div>
+            <div>
+                <img src="../static/media/wp9472627.webp" alt="">
+            </div>
+            <div>
+                <img src="../static/media/wp9472627.webp" alt="">
+            </div>
+            <div>
+                <img src="../static/media/wp9472627.webp" alt="">
+            </div>
+            <div>
+                <img src="../static/media/wp9472627.webp" alt="">
+            </div>
+            <div>
+                <img src="../static/media/wp9472627.webp" alt="">
+            </div>
+            <div>
+                <img src="../static/media/wp9472627.webp" alt="">
+            </div>
+        </div>
+    </main>
+{% endblock %}
