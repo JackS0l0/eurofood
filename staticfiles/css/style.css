@@ -472,12 +472,12 @@ body.body-dark footer {
   background-size: cover;
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1001px) {
   body header span:nth-child(3) {
     display: none;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   body header span:nth-child(2) {
     display: none;
   }
