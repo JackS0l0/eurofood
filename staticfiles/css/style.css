@@ -60,6 +60,9 @@ body header span .logo {
 body header span .logo img {
   width: 10vw;
 }
+body header span .btnSearch .input-group {
+  flex-wrap: nowrap;
+}
 body header span .btnSearch .input-group input {
   width: 30vw;
 }

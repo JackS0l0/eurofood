@@ -57,6 +57,7 @@ body{
             }
             .btnSearch{
                 .input-group{
+                    flex-wrap: nowrap;
                     input{
                         width: 30vw;
                     }
