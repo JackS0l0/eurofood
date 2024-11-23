@@ -70,29 +70,35 @@ $('.brandsBlock').slick({
 // gece gunduz
 function toggleTheme() {
     const body = document.body;
-    const themeCheckbox = document.querySelector('.theme-switch__checkbox');
-    if (themeCheckbox.checked) {
-        body.classList.add('body-dark'); // Qaranlıq rejimi aktivləşdir
+    const themeCheckboxes = document.querySelectorAll('.theme-switch__checkbox');
+    const isChecked = this.checked;
+    themeCheckboxes.forEach(checkbox => {
+        checkbox.checked = isChecked;
+    });
+    if (isChecked) {
+        body.classList.add('body-dark');
         localStorage.setItem('theme', 'dark');
     } else {
-        body.classList.remove('body-dark'); // Qaranlıq rejimi deaktivləşdir
+        body.classList.remove('body-dark');
         localStorage.setItem('theme', 'light');
     }
 }
 function loadTheme() {
     const body = document.body;
-    const themeCheckbox = document.querySelector('.theme-switch__checkbox');
+    const themeCheckboxes = document.querySelectorAll('.theme-switch__checkbox');
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
         body.classList.add('body-dark');
-        themeCheckbox.checked = true;
+        themeCheckboxes.forEach(checkbox => checkbox.checked = true);
     } else {
         body.classList.remove('body-dark');
-        themeCheckbox.checked = false;
+        themeCheckboxes.forEach(checkbox => checkbox.checked = false);
     }
 }
 document.addEventListener('DOMContentLoaded', () => {
-    loadTheme(); // Tema rejimini yüklə
-    const themeCheckbox = document.querySelector('.theme-switch__checkbox');
-    themeCheckbox.addEventListener('change', toggleTheme); // Tema dəyişikliklərini dinləyir
+    loadTheme();
+    const themeCheckboxes = document.querySelectorAll('.theme-switch__checkbox');
+    themeCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', toggleTheme);
+    });
 });
