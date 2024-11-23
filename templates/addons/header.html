@@ -2,7 +2,8 @@
 {% load i18n %}
 <header>
     <span>
-        <a href="{% url 'homepage' %}" class="logo"><img src="https://res.cloudinary.com/dwhwtk8c0/image/upload/f_auto,q_auto/yg9kyu0zl31xqtbbmstr" alt=""></a>
+        <a href="{% url 'homepage' %}" class="logo weblogo"><img src="https://res.cloudinary.com/dwhwtk8c0/image/upload/f_auto,q_auto/yg9kyu0zl31xqtbbmstr" alt=""></a>
+        <a href="{% url 'homepage' %}" class="logo mobilelogo"><img src="https://res.cloudinary.com/dwhwtk8c0/image/upload/f_auto,q_auto/qy5tclupaghqb7v3gckq" alt=""></a>
         <div class="btnSearch">
             <form method="GET" action="{% url 'searchpage' %}">
                 <div class="input-group">

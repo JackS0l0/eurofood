@@ -546,6 +546,11 @@ body.body-dark {
             span:nth-child(3){
                 display: none;
             }
+            span{
+                .mobilelogo{
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -559,6 +564,23 @@ body.body-dark {
                 width: 100%;
                 .btnSearch{
                     width: 70%;
+                }
+                .weblogo{
+                    display: none;
+                }
+                .mobilelogo{
+                    img{
+                        width: 15vw;
+                    }
+                }
+            }
+            .mobileSpan{
+                .mobileDropdown{
+                    .dropdown{
+                        button{
+                            font-size: 6vw;
+                        }
+                    }
                 }
             }
         }

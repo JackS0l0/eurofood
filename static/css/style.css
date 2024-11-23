@@ -472,12 +472,15 @@ body.body-dark footer {
   background-size: cover;
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1001px) {
   body header span:nth-child(3) {
     display: none;
   }
+  body header span .mobilelogo {
+    display: none;
+  }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   body header span:nth-child(2) {
     display: none;
   }
@@ -486,6 +489,15 @@ body.body-dark footer {
   }
   body header span:first-child .btnSearch {
     width: 70%;
+  }
+  body header span:first-child .weblogo {
+    display: none;
+  }
+  body header span:first-child .mobilelogo img {
+    width: 15vw;
+  }
+  body header .mobileSpan .mobileDropdown .dropdown button {
+    font-size: 6vw;
   }
   body main .productsBlock {
     grid-template-columns: auto;
