@@ -585,6 +585,21 @@ body.body-dark {
             }
         }
         main{
+            .categories{
+                margin: 5vw 0;
+                div{
+                    .category{
+                        .img{
+                            width: 20vw;
+                            padding: 4vw;
+                            height: 20vw;
+                        }
+                        .name{
+                            font-size: 5vw;
+                        }
+                    }
+                }
+            }
             .contentHead{
                 font-size: 5vw;
                 p{
@@ -596,6 +611,28 @@ body.body-dark {
                 justify-content: center;
                 .productBox{
                     margin-bottom: 5vw;
+                    .modal{
+                        .modal-dialog{
+                            .modal-content{
+                                .modal-body{
+                                    .modalBodyBlock{
+                                        flex-direction: column;
+                                        .img{
+                                            display: flex;
+                                            justify-content: center;
+                                            img{
+                                                width: 40vw;
+                                                height: 40vw;
+                                            }
+                                        }
+                                        .info{
+                                            font-size: 6vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                     .productBtnBox{
                         width: 90vw;
                         height: 90vw;

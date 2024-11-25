@@ -499,6 +499,17 @@ body.body-dark footer {
   body header .mobileSpan .mobileDropdown .dropdown button {
     font-size: 6vw;
   }
+  body main .categories {
+    margin: 5vw 0;
+  }
+  body main .categories div .category .img {
+    width: 20vw;
+    padding: 4vw;
+    height: 20vw;
+  }
+  body main .categories div .category .name {
+    font-size: 5vw;
+  }
   body main .contentHead {
     font-size: 5vw;
   }
@@ -511,6 +522,20 @@ body.body-dark footer {
   }
   body main .productsBlock .productBox {
     margin-bottom: 5vw;
+  }
+  body main .productsBlock .productBox .modal .modal-dialog .modal-content .modal-body .modalBodyBlock {
+    flex-direction: column;
+  }
+  body main .productsBlock .productBox .modal .modal-dialog .modal-content .modal-body .modalBodyBlock .img {
+    display: flex;
+    justify-content: center;
+  }
+  body main .productsBlock .productBox .modal .modal-dialog .modal-content .modal-body .modalBodyBlock .img img {
+    width: 40vw;
+    height: 40vw;
+  }
+  body main .productsBlock .productBox .modal .modal-dialog .modal-content .modal-body .modalBodyBlock .info {
+    font-size: 6vw;
   }
   body main .productsBlock .productBox .productBtnBox {
     width: 90vw;
