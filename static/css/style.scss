@@ -585,9 +585,39 @@ body.body-dark {
             }
         }
         main{
+            .contentHead{
+                font-size: 5vw;
+                p{
+                    font-size: 5vw;
+                }
+            }
             .productsBlock{
                 grid-template-columns: auto;
                 justify-content: center;
+                .productBox{
+                    margin-bottom: 5vw;
+                    .productBtnBox{
+                        width: 90vw;
+                        height: 90vw;
+                        .img{
+                            img{
+                                min-height: 60vw;
+                            }
+                        }
+                        .info{
+                            .name{
+                                font-size: 6vw;
+                            }
+                        }
+                    }
+                }
+            }
+            .welcomeCarusel{
+                div{
+                    img{
+                        height: 30vh;
+                    }
+                }
             }
         }
     }

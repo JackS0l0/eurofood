@@ -499,8 +499,30 @@ body.body-dark footer {
   body header .mobileSpan .mobileDropdown .dropdown button {
     font-size: 6vw;
   }
+  body main .contentHead {
+    font-size: 5vw;
+  }
+  body main .contentHead p {
+    font-size: 5vw;
+  }
   body main .productsBlock {
     grid-template-columns: auto;
     justify-content: center;
+  }
+  body main .productsBlock .productBox {
+    margin-bottom: 5vw;
+  }
+  body main .productsBlock .productBox .productBtnBox {
+    width: 90vw;
+    height: 90vw;
+  }
+  body main .productsBlock .productBox .productBtnBox .img img {
+    min-height: 60vw;
+  }
+  body main .productsBlock .productBox .productBtnBox .info .name {
+    font-size: 6vw;
+  }
+  body main .welcomeCarusel div img {
+    height: 30vh;
   }
 }/*# sourceMappingURL=style.css.map */
