@@ -4,7 +4,6 @@ from django.utils import timezone
 from ckeditor.fields import RichTextField
 class Brands(models.Model):
     name=models.CharField('Ad', max_length=200,unique=True)
-    # slug = models.SlugField(max_length=255, unique=True, db_index=True, verbose_name="URL",default='brand')
     def __str__(self):
         return self.name
     class Meta:
@@ -13,7 +12,6 @@ class Brands(models.Model):
 class Categories(models.Model):
     name=models.CharField('Ad', max_length=200,unique=True)
     icon=models.URLField('Icon', default='',null=True,blank=True)
-    # slug = models.SlugField(max_length=255, unique=False, db_index=True, verbose_name="URL", default='category')
     def __str__(self):
         return self.name
     class Meta:
