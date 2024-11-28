@@ -557,6 +557,11 @@ body.body-dark {
 @media only screen and (max-width:1000px) {
     body{
         header{
+            span{
+                .theme{
+                    --toggle-size: 5vw !important;
+                }
+            }
             span:nth-child(2){
                 display: none;
             }

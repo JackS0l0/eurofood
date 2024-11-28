@@ -481,6 +481,9 @@ body.body-dark footer {
   }
 }
 @media only screen and (max-width: 1000px) {
+  body header span .theme {
+    --toggle-size: 5vw !important;
+  }
   body header span:nth-child(2) {
     display: none;
   }
