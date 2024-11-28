@@ -230,6 +230,12 @@ body main .filterPage {
 body main .filterPage .productsFilter .accordion {
   min-width: 20vw;
 }
+body main .filterPage .productsFilter .accordion .accordion-item {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
 body main .filterPage .productsFilter .accordion .accordion-item .accordion-collapse .accordion-body {
   display: flex;
   flex-direction: column;
@@ -238,6 +244,11 @@ body main .filterPage .productsFilter .accordion .accordion-item .accordion-coll
   width: -moz-fit-content;
   width: fit-content;
   text-wrap: nowrap;
+  width: 100%;
+  text-align: start;
+  margin-bottom: 1vw;
+  color: #00011A;
+  border-bottom: 1px solid #1D1F2C;
 }
 body main .breadcrumb {
   margin: 3vw;
@@ -459,6 +470,21 @@ body.body-dark header span .dropdown .dropdown-menu {
 }
 body.body-dark header span .dropdown .dropdown-menu li:hover a {
   background-color: #00587E;
+  color: white;
+}
+body.body-dark main .filterPage .productsFilter .accordion .accordion-item {
+  border-color: #00011A;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+body.body-dark main .filterPage .productsFilter .accordion .accordion-item .accordion-collapse .accordion-body .btn {
+  border-bottom: 1px solid white;
+  color: white;
+}
+body.body-dark main .filterPage .productsFilter .accordion .accordion-item .accordion-header button {
+  background-color: #00011A;
   color: white;
 }
 body.body-dark main .productsBlock .productBox .modal .modal-dialog .modal-content .modal-body {

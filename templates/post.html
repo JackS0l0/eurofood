@@ -4,7 +4,7 @@
     <main>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'homepage' %}">Ev</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'homepage' %}">{% trans 'Əsas səhifə' %}</a></li>
                 <li class="breadcrumb-item"><a href="{% url 'categoriesdetail' object.id %}">{{object.category}}</a></li>
                 <li class="breadcrumb-item"><a href="{% url 'brandsdetail' object.id %}">{{object.brand}}</a></li>
                 <li class="breadcrumb-item active" aria-current="page">{{object.name}}</li>
@@ -17,8 +17,8 @@
                 </div>
                 <div class="info">
                     <h3><b>{{object.name}}</b></h3>
-                    <h4><a href="#">Brend: {{object.brand}}</a></h4>
-                    <h4><a href="#">Bölmə: {{object.category}}</a></h4>
+                    <h4><a href="#">{% trans 'Brend' %}: {{object.brand}}</a></h4>
+                    <h4><a href="#">{% trans 'Bölmə' %}: {{object.category}}</a></h4>
                     {{object.desc | safe}}
                 </div>
             </div>

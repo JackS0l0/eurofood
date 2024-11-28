@@ -262,6 +262,10 @@ body{
                 .accordion{
                     min-width: 20vw;
                     .accordion-item{
+                        background: rgba(255, 255, 255, 0.2);
+                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                        backdrop-filter: blur(5px);
+                        -webkit-backdrop-filter: blur(5px);
                         .accordion-collapse{
                             .accordion-body{
                                 display: flex;
@@ -269,6 +273,11 @@ body{
                                 .btn{
                                     width: fit-content;
                                     text-wrap: nowrap;
+                                    width: 100%;
+                                    text-align: start;
+                                    margin-bottom: 1vw;
+                                    color: #00011A;
+                                    border-bottom: 1px solid #1D1F2C;
                                 }
                             }
                         }
@@ -518,6 +527,33 @@ body.body-dark {
         }
     }
     main{
+        .filterPage{
+            .productsFilter{
+                .accordion{
+                    .accordion-item{
+                        border-color: #00011A;
+                        background: rgba(255, 255, 255, 0.2);
+                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                        backdrop-filter: blur(5px);
+                        -webkit-backdrop-filter: blur(5px);
+                        .accordion-collapse{
+                            .accordion-body{
+                                .btn{
+                                    border-bottom: 1px solid white;
+                                    color: white;
+                                }
+                            }
+                        }
+                        .accordion-header{
+                            button{
+                                background-color: #00011A;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .productsBlock{
             .productBox{
                 .modal{

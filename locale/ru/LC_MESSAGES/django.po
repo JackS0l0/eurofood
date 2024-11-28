@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-20 23:38+0400\n"
+"POT-Creation-Date: 2024-11-28 23:41+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,30 +20,59 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\templates\addons\header.html:19
+#: .\templates\addons\card.html:34
+msgid "Bağla"
+msgstr "Закрыть"
+
+#: .\templates\addons\card.html:35
+msgid "Ətraflı bax"
+msgstr "Посмотреть больше"
+
+#: .\templates\addons\footer.html:25
+msgid "Bütün hüquqlar EuroFood-20 tərəfindən qorunur"
+msgstr "Все права принадлежат EuroFood-20."
+
+#: .\templates\addons\header.html:10
+msgid "Məhsul axtar"
+msgstr "Поиск продукта"
+
+#: .\templates\addons\header.html:22 .\templates\addons\header.html:57
 msgid "Məhsullar"
 msgstr "Продукты"
 
-#: .\templates\addons\header.html:20
+#: .\templates\addons\header.html:23 .\templates\addons\header.html:58
 msgid "Haqqımızda"
 msgstr "О нас"
+
+#: .\templates\addons\header.html:24 .\templates\addons\header.html:59
+msgid "Əlaqə"
+msgstr "Контакт"
 
 #: .\templates\index.html:17
 msgid "Yeni gələn məhsullar"
 msgstr "Новые продукты"
 
-#: .\templates\index.html:18
+#: .\templates\index.html:18 .\templates\index.html:25
+#: .\templates\index.html:43
 msgid "Bütün məhsullar"
 msgstr "Все продукты"
 
-#: .\templates\index.html:49
-msgid "Bağla"
-msgstr "Закрыть"
+#: .\templates\index.html:24
+msgid "Bölmələr"
+msgstr "Разделы"
 
-#: .\templates\index.html:50
-msgid "Ətraflı bax"
-msgstr "Посмотреть больше"
-
-#: .\templates\index.html:59
+#: .\templates\index.html:42
 msgid "Ən çox satılanlar"
 msgstr "Бестселлеры"
+
+#: .\templates\post.html:7
+msgid "Əsas səhifə"
+msgstr "Главная страница"
+
+#: .\templates\post.html:20
+msgid "Brend"
+msgstr "Бренд"
+
+#: .\templates\post.html:21
+msgid "Bölmə"
+msgstr "Раздел"

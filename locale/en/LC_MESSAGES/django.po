@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-20 23:38+0400\n"
+"POT-Creation-Date: 2024-11-28 23:41+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,30 +18,59 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\templates\addons\header.html:19
+#: .\templates\addons\card.html:34
+msgid "Bağla"
+msgstr "Close"
+
+#: .\templates\addons\card.html:35
+msgid "Ətraflı bax"
+msgstr "See more"
+
+#: .\templates\addons\footer.html:25
+msgid "Bütün hüquqlar EuroFood-20 tərəfindən qorunur"
+msgstr "All rights reserved by EuroFood-20"
+
+#: .\templates\addons\header.html:10
+msgid "Məhsul axtar"
+msgstr "Search product"
+
+#: .\templates\addons\header.html:22 .\templates\addons\header.html:57
 msgid "Məhsullar"
 msgstr "Products"
 
-#: .\templates\addons\header.html:20
+#: .\templates\addons\header.html:23 .\templates\addons\header.html:58
 msgid "Haqqımızda"
 msgstr "About us"
+
+#: .\templates\addons\header.html:24 .\templates\addons\header.html:59
+msgid "Əlaqə"
+msgstr "Contact"
 
 #: .\templates\index.html:17
 msgid "Yeni gələn məhsullar"
 msgstr "The latest"
 
-#: .\templates\index.html:18
+#: .\templates\index.html:18 .\templates\index.html:25
+#: .\templates\index.html:43
 msgid "Bütün məhsullar"
 msgstr "All products"
 
-#: .\templates\index.html:49
-msgid "Bağla"
-msgstr "Close"
+#: .\templates\index.html:24
+msgid "Bölmələr"
+msgstr "Categories"
 
-#: .\templates\index.html:50
-msgid "Ətraflı bax"
-msgstr "See more"
-
-#: .\templates\index.html:59
+#: .\templates\index.html:42
 msgid "Ən çox satılanlar"
 msgstr "Bestsellers"
+
+#: .\templates\post.html:7
+msgid "Əsas səhifə"
+msgstr "Home page"
+
+#: .\templates\post.html:20
+msgid "Brend"
+msgstr "Brand"
+
+#: .\templates\post.html:21
+msgid "Bölmə"
+msgstr "Category"

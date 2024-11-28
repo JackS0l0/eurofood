@@ -1,0 +1,41 @@
+{% load static %}
+{% load i18n %}
+{% for post in products %}
+    <div class="productBox">
+        <button type="button" class="btn productBtnBox" data-bs-toggle="modal" data-bs-target="#{{post.id}}">
+            <div class="img">
+                <img src="{{post.img}}" alt="">
+            </div>
+            <div class="info">
+                <p class="name">{{post.brand}} {{post.name}}</p>
+            </div>
+        </button>
+        <div class="modal fade" id="{{post.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalBodyBlock">
+                            <div class="img">
+                                <img src="{{post.img}}" alt="img">
+                            </div>
+                            <div class="info">
+                                <p><b>{{post.name}}</b></p>
+                                <p><a href="{% url 'brandsdetail' post.brand.id %}">Brend: {{post.brand}}</a></p>
+                                <p><a href="{% url 'categoriesdetail' post.category.id %}">Bölmə: {{post.category}}</a></p>
+                                {{post.mini_desc | safe}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{% trans 'Bağla' %}</button>
+                        <button type="button" class="btn btn-primary"><a href="{% url 'postdetail' post.slug post.id %}">{% trans 'Ətraflı bax' %}</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}

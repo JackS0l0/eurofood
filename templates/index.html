@@ -17,7 +17,9 @@
             <p>{% trans 'Yeni gələn məhsullar' %}</p>
             <a href="#">{% trans 'Bütün məhsullar' %} <i class="bi bi-arrow-right-short"></i></a>
         </div>
-        {% include './addons/listcard.html' %}
+        <div class="productsBlock">
+            {% include 'addons/card.html' %}
+        </div>
         <div class="contentHead">
             <p>{% trans 'Bölmələr' %}</p>
             <a href="#">{% trans 'Bütün məhsullar' %} <i class="bi bi-arrow-right-short"></i></a>
@@ -41,30 +43,11 @@
             <a href="#">{% trans 'Bütün məhsullar' %} <i class="bi bi-arrow-right-short"></i></a>
         </div>
         <div class="brandsBlock">
-            <div>
-                <img src="../static/media/composition-with-packets-of-lays-potato-chips-2PPJ24E.jpg" alt="">
-            </div>
-            <div>
-                <img src="../static/media/food-table-1j6ik0elenqlwh4k.jpg" alt="">
-            </div>
-            <div>
-                <img src="../static/media/wp9472627.webp" alt="">
-            </div>
-            <div>
-                <img src="../static/media/wp9472627.webp" alt="">
-            </div>
-            <div>
-                <img src="../static/media/wp9472627.webp" alt="">
-            </div>
-            <div>
-                <img src="../static/media/wp9472627.webp" alt="">
-            </div>
-            <div>
-                <img src="../static/media/wp9472627.webp" alt="">
-            </div>
-            <div>
-                <img src="../static/media/wp9472627.webp" alt="">
-            </div>
+            {% for post in products %}
+                <div>
+                    <p>{{post.name}}</p>
+                </div>
+            {% endfor %}
         </div>
     </main>
 {% endblock %}
