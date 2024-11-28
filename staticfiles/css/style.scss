@@ -254,6 +254,7 @@ body{
         }
     }
     main{
+        min-height: 100vh;
         .filterPage{
             margin: 3vw;
             display: flex;
@@ -379,6 +380,8 @@ body{
             margin: 0 3vw 3vw 3vw;
             display: grid;
             grid-template-columns: auto auto auto auto;
+            justify-content: space-between;
+            row-gap: 2vw;
             .productBox{
                 .productBtnBox{
                     display: flex;
@@ -438,6 +441,15 @@ body{
                         }
                     }
                 }
+            }
+        }
+        .allproducts{
+            .productsBlock{
+                width: 100%;
+                margin: 0 1vw;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                justify-content: space-between;
             }
         }
     }

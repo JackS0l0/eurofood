@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-28 23:41+0400\n"
+"POT-Creation-Date: 2024-11-29 02:23+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,6 +45,14 @@ msgstr "About us"
 #: .\templates\addons\header.html:24 .\templates\addons\header.html:59
 msgid "Əlaqə"
 msgstr "Contact"
+
+#: .\templates\categories.html:10
+msgid "Brendlər"
+msgstr "Brands"
+
+#: .\templates\categories.html:22
+msgid "Çeşidə görə"
+msgstr "By type"
 
 #: .\templates\index.html:17
 msgid "Yeni gələn məhsullar"

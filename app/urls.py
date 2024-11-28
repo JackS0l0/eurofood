@@ -13,6 +13,7 @@ urlpatterns = [
     path('category/<int:category_id>/',productsviews.CategoriesList, name='categoriesdetail'),
     path('brands/<int:brand_id>/',productsviews.BrandsList,name='brandsdetail'),
     path('search_res/', mainviews.SearchForm.as_view(), name='searchpage'),
+    path('allproducts/', productsviews.products, name='productspage'),
     path('admin/', admin.site.urls),
     path('',mainviews.index,name='homepage'),
 ]

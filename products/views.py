@@ -38,33 +38,11 @@ def BrandsList(request, brand_id):
         'products': products,
     }
     return render(request, 'categories.html',data)
-# class CategoriesList(ListView):
-#     model = Products
-#     template_name = 'categories.html'
-#     context_object_name = 'products'
-#     def get_queryset(self):
-#         queryset = super(CategoriesList, self).get_queryset()
-#         category_id = self.kwargs.get('category_id')
-#         return queryset.filter(category_id=category_id) if category_id else queryset
-#     def get_context_data(self, **kwargs):
-#         data=super(CategoriesList,self).get_context_data(**kwargs)
-#         data['title']='Categories'
-#         data['categories']=Categories.objects.all().order_by('name')
-#         data['brands']=Brands.objects.all().order_by('name')
-#         data['products']=Products.objects.all().order_by('-date')
-#         return data
-# class BrandsList(ListView):
-#     model = Products
-#     template_name = 'brands.html'
-#     context_object_name = 'products'
-#     def get_queryset(self):
-#         queryset = super(BrandsList, self).get_queryset()
-#         brand_id = self.kwargs.get('brand_id')
-#         return queryset.filter(brand_id=brand_id) if brand_id else queryset
-#     def get_context_data(self, **kwargs):
-#         data=super(BrandsList,self).get_context_data(**kwargs)
-#         data['title']='Brands'
-#         data['categories']=Categories.objects.all().order_by('name')
-#         data['brands']=Brands.objects.all().order_by('name')
-#         data['products']=Products.objects.all().order_by('-date')
-#         return data
+def products(request):
+    data={
+        'title': 'All Products',
+        'categories': Categories.objects.all().order_by('name'),
+        'brands': Brands.objects.all().order_by('name'),
+        'products': Products.objects.all().order_by('-date'),
+    }
+    return render(request, 'allproducts.html',data)
