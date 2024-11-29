@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+$main-blue:#00b7e3;
+$main-blue-dark:#00587E;
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +12,6 @@ html{
     margin: auto;
 }
 body{
-    background-color: #000000;
     background-image: url(../media/bk2.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -65,7 +66,7 @@ body{
                 .btn{
                     background: white;
                     i{
-                        color: #00587E;
+                        color: $main-blue;
                     }
                     border: 1px solid white;
                     border-radius: 0 1vw 1vw 0 !important;
@@ -142,7 +143,6 @@ body{
                     transition: var(--circle-transition);
                     pointer-events: none;
                 }
-                
                 .theme-switch__sun-moon-container {
                     pointer-events: auto;
                     position: relative;
@@ -255,6 +255,13 @@ body{
     }
     main{
         min-height: 100vh;
+        .breadcrumb{
+            margin: 3vw;
+            --bs-breadcrumb-item-active-color: rgb(30,30,30);
+            .breadcrumb-item.active{
+                font-weight: bold !important;
+            }
+        }
         .filterPage{
             margin: 3vw;
             display: flex;
@@ -286,9 +293,6 @@ body{
                 }
             }
         }
-        .breadcrumb{
-            margin: 3vw;
-        }
         .postPage{
             .postFloat1{
                 background: rgba(255, 255, 255, 0.2);
@@ -304,6 +308,9 @@ body{
                     margin-right: 2vw;
                     img{
                         width: 30vw;
+                        height: 30vw;
+                        object-fit: cover;
+                        object-position: top;
                         border-radius: 1vw;
                         border: 1px solid white;
                     }
@@ -317,7 +324,7 @@ body{
                     flex-direction: column;
                     align-items: center;
                     .img{
-                        background-color: #00587E;
+                        background-color: $main-blue;
                         border-radius: 100%;
                         width: 7vw;
                         height: 7vw;
@@ -438,6 +445,13 @@ body{
                                     }
                                 }
                             }
+                            .modal-footer{
+                                .btn{
+                                    a{
+                                        color: white;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -530,7 +544,7 @@ body.body-dark {
                     background-color: #00011A;
                     li:hover{
                         a{
-                            background-color: #00587E;
+                            background-color: $main-blue-dark;
                             color: white;
                         }
                     }
@@ -539,6 +553,10 @@ body.body-dark {
         }
     }
     main{
+        .breadcrumb{
+            margin: 3vw;
+            --bs-breadcrumb-item-active-color: white;
+        }
         .filterPage{
             .productsFilter{
                 .accordion{
@@ -558,7 +576,7 @@ body.body-dark {
                         }
                         .accordion-header{
                             button{
-                                background-color: #00011A;
+                                background-color: $main-blue-dark;
                                 color: white;
                             }
                         }
@@ -568,6 +586,11 @@ body.body-dark {
         }
         .productsBlock{
             .productBox{
+                .productBtnBox{
+                    .info{
+                        color: white;
+                    }
+                }
                 .modal{
                     .modal-dialog{
                         .modal-content{

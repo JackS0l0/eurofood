@@ -5,8 +5,9 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{% url 'homepage' %}">{% trans 'Əsas səhifə' %}</a></li>
-                <li class="breadcrumb-item"><a href="{% url 'categoriesdetail' object.id %}">{{object.category}}</a></li>
-                <li class="breadcrumb-item"><a href="{% url 'brandsdetail' object.id %}">{{object.brand}}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'productspage' %}">{% trans 'Bütün məhsullar' %}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'categoriesdetail' object.category.id %}">{{object.category}}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'brandsdetail' object.brand.id %}">{{object.brand}}</a></li>
                 <li class="breadcrumb-item active" aria-current="page">{{object.name}}</li>
             </ol>
         </nav>

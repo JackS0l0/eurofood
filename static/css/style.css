@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  background-color: #000000;
   background-image: url(../media/bk2.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -72,7 +71,7 @@ body header span .btnSearch .btn {
   border-radius: 0 1vw 1vw 0 !important;
 }
 body header span .btnSearch .btn i {
-  color: #00587E;
+  color: #00b7e3;
 }
 body header span .theme .theme-switch {
   --toggle-size: 1vw;
@@ -225,6 +224,13 @@ body header span .theme .theme-switch__checkbox:checked + .theme-switch__contain
 body main {
   min-height: 100vh;
 }
+body main .breadcrumb {
+  margin: 3vw;
+  --bs-breadcrumb-item-active-color: rgb(30,30,30);
+}
+body main .breadcrumb .breadcrumb-item.active {
+  font-weight: bold !important;
+}
 body main .filterPage {
   margin: 3vw;
   display: flex;
@@ -253,9 +259,6 @@ body main .filterPage .productsFilter .accordion .accordion-item .accordion-coll
   color: #00011A;
   border-bottom: 1px solid #1D1F2C;
 }
-body main .breadcrumb {
-  margin: 3vw;
-}
 body main .postPage .postFloat1 {
   background: rgba(255, 255, 255, 0.2);
   padding: 1vw;
@@ -272,6 +275,11 @@ body main .postPage .postFloat1 .img {
 }
 body main .postPage .postFloat1 .img img {
   width: 30vw;
+  height: 30vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   border-radius: 1vw;
   border: 1px solid white;
 }
@@ -281,7 +289,7 @@ body main .categories div .category {
   align-items: center;
 }
 body main .categories div .category .img {
-  background-color: #00587E;
+  background-color: #00b7e3;
   border-radius: 100%;
   width: 7vw;
   height: 7vw;
@@ -401,6 +409,9 @@ body main .productsBlock .productBox .modal .modal-dialog .modal-content .modal-
      object-fit: cover;
   border-radius: 1vw;
 }
+body main .productsBlock .productBox .modal .modal-dialog .modal-content .modal-footer .btn a {
+  color: white;
+}
 body main .allproducts .productsBlock {
   width: 100%;
   margin: 0 1vw;
@@ -484,6 +495,10 @@ body.body-dark header span .dropdown .dropdown-menu li:hover a {
   background-color: #00587E;
   color: white;
 }
+body.body-dark main .breadcrumb {
+  margin: 3vw;
+  --bs-breadcrumb-item-active-color: white;
+}
 body.body-dark main .filterPage .productsFilter .accordion .accordion-item {
   border-color: #00011A;
   background: rgba(255, 255, 255, 0.2);
@@ -496,7 +511,10 @@ body.body-dark main .filterPage .productsFilter .accordion .accordion-item .acco
   color: white;
 }
 body.body-dark main .filterPage .productsFilter .accordion .accordion-item .accordion-header button {
-  background-color: #00011A;
+  background-color: #00587E;
+  color: white;
+}
+body.body-dark main .productsBlock .productBox .productBtnBox .info {
   color: white;
 }
 body.body-dark main .productsBlock .productBox .modal .modal-dialog .modal-content .modal-body {
