@@ -5,7 +5,7 @@ from modeltranslation.admin import TranslationAdmin
 class ProductControl(TranslationAdmin):
     group_fieldsets = True 
     list_filter = ['category','brand']
-    search_fields = ['category','brand','name','id']
+    search_fields = ['name','id']
     list_display = ['name','id','brand','category']
     class Media:
         js = (

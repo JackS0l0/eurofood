@@ -42,7 +42,7 @@ class SearchForm(ListView):
         query = self.request.GET.get('q')
         if query:
             context['title'] = 'Axtarış nəticəsi'
-            context['products'] = Products.objects.filter(Q(name__icontains=query)).order_by('-date')
+            context['products'] = Products.objects.filter(Q(name__icontains=query)).order_by('-date')[0:8]
             context['categories'] = Categories.objects.all().order_by('name')
             context['brands'] = Brands.objects.all().order_by('name')
             return context
