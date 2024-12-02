@@ -9,7 +9,9 @@
             </ol>
         </nav>
         <div class="aboutPage">
-            
+            {% for post in about %}
+                <p>{{post.txt|safe}}</p>
+            {% endfor %}
         </div>
     </main>
 {% endblock %}

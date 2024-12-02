@@ -255,6 +255,9 @@ body{
     }
     main{
         min-height: 100vh;
+        .aboutPage{
+            margin: 0 3vw;
+        }
         .breadcrumb{
             margin: 3vw;
             --bs-breadcrumb-item-active-color: rgb(30,30,30);

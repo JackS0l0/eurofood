@@ -224,6 +224,9 @@ body header span .theme .theme-switch__checkbox:checked + .theme-switch__contain
 body main {
   min-height: 100vh;
 }
+body main .aboutPage {
+  margin: 0 3vw;
+}
 body main .breadcrumb {
   margin: 3vw;
   --bs-breadcrumb-item-active-color: rgb(30,30,30);

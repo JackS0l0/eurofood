@@ -8,6 +8,7 @@ from django.urls.exceptions import Resolver404
 from django.views.generic import ListView
 from django.utils import translation
 from django.db.models import Q
+from .models import About
 def set_language(request, language):
     for lang, _ in settings.LANGUAGES:
         translation.activate(lang)
@@ -49,6 +50,7 @@ class SearchForm(ListView):
 def about(request):
     data={
         'title': 'About us',
+        'about': About.objects.all()[0:1],
     }
     return render(request,'about.html',data)
 def contact(request):
