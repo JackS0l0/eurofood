@@ -46,3 +46,13 @@ class SearchForm(ListView):
             context['categories'] = Categories.objects.all().order_by('name')
             context['brands'] = Brands.objects.all().order_by('name')
             return context
+def about(request):
+    data={
+        'title': 'About us',
+    }
+    return render(request,'about.html',data)
+def contact(request):
+    data={
+        'title': 'Contact us',
+    }
+    return render(request,'contact.html',data)

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block main %}
+    <main>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'homepage' %}">{% trans 'Əsas səhifə' %}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{% trans 'Haqqımızda' %}</li>
+            </ol>
+        </nav>
+        <div class="aboutPage">
+            
+        </div>
+    </main>
+{% endblock %}

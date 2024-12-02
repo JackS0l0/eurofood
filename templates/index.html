@@ -15,14 +15,14 @@
         </div>
         <div class="contentHead">
             <p>{% trans 'Yeni gələn məhsullar' %}</p>
-            <a href="#">{% trans 'Bütün məhsullar' %} <i class="bi bi-arrow-right-short"></i></a>
+            <a href="{% url 'productspage' %}">{% trans 'Bütün məhsullar' %} <i class="bi bi-arrow-right-short"></i></a>
         </div>
         <div class="productsBlock">
             {% include 'addons/card.html' %}
         </div>
         <div class="contentHead">
             <p>{% trans 'Bölmələr' %}</p>
-            <a href="#">{% trans 'Bütün məhsullar' %} <i class="bi bi-arrow-right-short"></i></a>
+            <a href="{% url 'productspage' %}">{% trans 'Bütün məhsullar' %} <i class="bi bi-arrow-right-short"></i></a>
         </div>
         <div class="categories">
             {% for post in categories %}
@@ -40,7 +40,7 @@
         </div>
         <div class="contentHead">
             <p>{% trans 'Ən çox satılanlar' %}</p>
-            <a href="#">{% trans 'Bütün məhsullar' %} <i class="bi bi-arrow-right-short"></i></a>
+            <a href="{% url 'productspage' %}">{% trans 'Bütün məhsullar' %} <i class="bi bi-arrow-right-short"></i></a>
         </div>
         <div class="brandsBlock">
             {% for post in products %}

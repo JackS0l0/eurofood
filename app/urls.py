@@ -16,6 +16,8 @@ urlpatterns = [
     path('allproducts/', productsviews.products, name='productspage'),
     path('admin/', admin.site.urls),
     path('',mainviews.index,name='homepage'),
+    path('about_us/',mainviews.about,name='aboutuspage'),
+    path('contact_us/',mainviews.contact,name='contactpage'),
 ]
 urlpatterns = [
     *i18n_patterns(*urlpatterns, prefix_default_language=False),
