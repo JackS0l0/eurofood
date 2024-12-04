@@ -29,7 +29,7 @@ def set_language(request, language):
 def index(request):
     data={
         'title': 'EuroFood',
-        'products':Products.objects.all().order_by('-date'),
+        'products':Products.objects.all().order_by('-date')[0:8],
         'brands':Brands.objects.all(),
         'categories':Categories.objects.all(),
     }
