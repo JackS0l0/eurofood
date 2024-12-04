@@ -11,6 +11,7 @@
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
+                                <a href="{% url 'productspage' %}"><button class="btn">{% trans 'Bütün məhsullar' %}</button></a>
                                 {% for post in brands %}
                                     <a href="{% url 'brandsdetail' post.id %}"><button class="btn">{{post.name}}</button></a>
                                 {% endfor %}
@@ -23,6 +24,7 @@
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
+                                <a href="{% url 'productspage' %}"><button class="btn">{% trans 'Bütün məhsullar' %}</button></a>
                                 {% for post in categories %}
                                     <a href="{% url 'categoriesdetail' post.id %}"><button class="btn">{{post.name}}</button></a>
                                 {% endfor %}
