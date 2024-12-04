@@ -556,8 +556,24 @@ body.body-dark {
         }
     }
     main{
+        .paginatorBlock{
+            nav{
+                .pagination{
+                    .page-item{
+                        a{
+                            background-color: $main-blue;
+                            border-color: $main-blue-dark;
+                        }
+                        p{
+                            background-color: $main-blue;
+                            color: white;
+                            border-color: $main-blue-dark;
+                        }
+                    }
+                }
+            }
+        }
         .breadcrumb{
-            margin: 3vw;
             --bs-breadcrumb-item-active-color: white;
         }
         .filterPage{

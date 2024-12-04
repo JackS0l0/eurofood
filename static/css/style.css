@@ -498,8 +498,16 @@ body.body-dark header span .dropdown .dropdown-menu li:hover a {
   background-color: #00587E;
   color: white;
 }
+body.body-dark main .paginatorBlock nav .pagination .page-item a {
+  background-color: #00b7e3;
+  border-color: #00587E;
+}
+body.body-dark main .paginatorBlock nav .pagination .page-item p {
+  background-color: #00b7e3;
+  color: white;
+  border-color: #00587E;
+}
 body.body-dark main .breadcrumb {
-  margin: 3vw;
   --bs-breadcrumb-item-active-color: white;
 }
 body.body-dark main .filterPage .productsFilter .accordion .accordion-item {

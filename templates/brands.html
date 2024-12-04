@@ -35,5 +35,30 @@
                 {% include 'addons/card.html' %}
             </div>
         </div>
+        <div class="paginatorBlock">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    {% if products.has_previous %}
+                        <li class="page-item {% if not products.has_previous %} disabled {% endif %}">
+                            <a class="page-link" href="?page=1"><i class="bi bi-skip-start"></i></a>
+                        </li>
+                        <li class="page-item {% if not products.has_previous %} disabled {% endif %}">
+                            <a class="page-link" href="?page={{ products.previous_page_number }}">Öncəki</a>
+                        </li>
+                    {% endif %}
+                        <li class="page-item">
+                            <p class="page-link">{{ products.number }} / {{ products.paginator.num_pages }}.</p>
+                        </li>
+                    {% if products.has_next %}
+                        <li class="page-item {% if not products.has_next %} disabled {% endif %}">
+                            <a class="page-link" href="?page={{ products.next_page_number }}">Növbəti</a>
+                        </li>
+                        <li class="page-item {% if not products.has_next %} disabled {% endif %}">
+                            <a class="page-link" href="?page={{ products.paginator.num_pages }}"><i class="bi bi-skip-end"></i></a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
     </main>
 {% endblock %}
