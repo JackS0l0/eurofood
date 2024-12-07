@@ -575,6 +575,20 @@ body.body-dark footer {
   body main .filterPage {
     flex-direction: column;
   }
+  body main .filterPage .webPoductsFilter .filterbtn {
+    margin-bottom: 2vw;
+  }
+  body main .filterPage .webPoductsFilter .filterbtn i {
+    font-size: 2vw;
+  }
+  body main .filterPage .webPoductsFilter .offcanvas {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body main .filterPage .webPoductsFilter .offcanvas .offcanvas-body .filterName {
+    font-size: 5vw;
+    font-weight: bold;
+  }
   body main .filterPage .productsFilter {
     display: none;
   }

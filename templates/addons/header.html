@@ -54,9 +54,9 @@
             <div class="dropdown">
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list"></i></button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">{% trans 'Məhsullar' %}</a></li>
-                    <li><a class="dropdown-item" href="#">{% trans 'Haqqımızda' %}</a></li>
-                    <li><a class="dropdown-item" href="#">{% trans 'Əlaqə' %}</a></li>
+                    <li><a class="dropdown-item" href="{% url 'productspage' %}">{% trans 'Məhsullar' %}</a></li>
+                    <li><a class="dropdown-item" href="{% url 'aboutuspage' %}">{% trans 'Haqqımızda' %}</a></li>
+                    <li><a class="dropdown-item" href="{% url 'contactpage' %}">{% trans 'Əlaqə' %}</a></li>
                     <li>
                         <div class="theme btn">
                             <label class="theme-switch">

@@ -689,6 +689,23 @@ body.body-dark {
         main{
             .filterPage{
                 flex-direction: column;
+                .webPoductsFilter{
+                    .filterbtn{
+                        margin-bottom: 2vw;
+                        i{
+                            font-size: 2vw;
+                        }
+                    }
+                    .offcanvas{
+                        width: fit-content;
+                        .offcanvas-body{
+                            .filterName{
+                                font-size: 5vw;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
                 .productsFilter{
                     display: none;
                 }
