@@ -683,6 +683,12 @@ body.body-dark {
             .filterPage{
                 .productsBlock{
                     grid-template-columns: auto;
+                    .productBox{
+                        .productBtnBox{
+                            width: 63vw;
+                            min-height: 90vw;
+                        }
+                    }
                 }
             }
             .categories{

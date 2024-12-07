@@ -572,6 +572,10 @@ body.body-dark footer {
   body main .filterPage .productsBlock {
     grid-template-columns: auto;
   }
+  body main .filterPage .productsBlock .productBox .productBtnBox {
+    width: 63vw;
+    min-height: 90vw;
+  }
   body main .categories {
     margin: 5vw 0;
   }
