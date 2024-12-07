@@ -546,6 +546,9 @@ body.body-dark footer {
   body header span .mobilelogo {
     display: none;
   }
+  body main .filterPage .webPoductsFilter {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1000px) {
   body header span .theme {
@@ -569,12 +572,24 @@ body.body-dark footer {
   body header .mobileSpan .mobileDropdown .dropdown button {
     font-size: 6vw;
   }
+  body main .filterPage {
+    flex-direction: column;
+  }
+  body main .filterPage .productsFilter {
+    display: none;
+  }
   body main .filterPage .productsBlock {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
   }
   body main .filterPage .productsBlock .productBox .productBtnBox {
-    width: 61vw;
-    min-height: 90vw;
+    width: 43vw;
+    height: 43vw;
+  }
+  body main .filterPage .productsBlock .productBox .productBtnBox .img img {
+    min-height: 20vw;
+  }
+  body main .filterPage .productsBlock .productBox .productBtnBox .info .name {
+    font-size: 3vw;
   }
   body main .categories {
     margin: 5vw 0;

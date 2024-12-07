@@ -3,6 +3,26 @@
 {% block main %}
     <main>
         <div class="filterPage allproducts">
+            <div class="webPoductsFilter">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">{% trans 'Filter' %}</button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">{% trans 'Filter' %}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                            <li><a href="{% url 'productspage' %}"><button class="btn">{% trans 'Bütün məhsullar' %}</button></a></li>
+                            <p>{% trans 'Brendlər' %}</p>
+                        {% for post in brands %}
+                            <li><a href="{% url 'brandsdetail' post.id %}"><button class="btn">{{post.name}}</button></a></li>
+                        {% endfor %}
+                            <p>{% trans 'Çeşidə görə' %}</p>
+                        {% for post in categories %}
+                            <li><a href="{% url 'categoriesdetail' post.id %}"><button class="btn">{{post.name}}</button></a></li>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
             <div class="productsFilter">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
