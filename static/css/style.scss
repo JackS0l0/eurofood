@@ -577,6 +577,18 @@ body.body-dark {
             --bs-breadcrumb-item-active-color: white;
         }
         .filterPage{
+            .webPoductsFilter{
+                .offcanvas{
+                    background-color: #00011A;
+                    color: white;
+                    a{
+                        color: white;
+                    }
+                    .btn{
+                        color: white;
+                    }
+                }
+            }
             .productsFilter{
                 .accordion{
                     .accordion-item{

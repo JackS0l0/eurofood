@@ -510,6 +510,16 @@ body.body-dark main .paginatorBlock nav .pagination .page-item p {
 body.body-dark main .breadcrumb {
   --bs-breadcrumb-item-active-color: white;
 }
+body.body-dark main .filterPage .webPoductsFilter .offcanvas {
+  background-color: #00011A;
+  color: white;
+}
+body.body-dark main .filterPage .webPoductsFilter .offcanvas a {
+  color: white;
+}
+body.body-dark main .filterPage .webPoductsFilter .offcanvas .btn {
+  color: white;
+}
 body.body-dark main .filterPage .productsFilter .accordion .accordion-item {
   border-color: #00011A;
   background: rgba(255, 255, 255, 0.2);
