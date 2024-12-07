@@ -569,6 +569,9 @@ body.body-dark footer {
   body header .mobileSpan .mobileDropdown .dropdown button {
     font-size: 6vw;
   }
+  body main .filterPage .productsBlock {
+    grid-template-columns: auto;
+  }
   body main .categories {
     margin: 5vw 0;
   }

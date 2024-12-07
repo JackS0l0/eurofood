@@ -680,6 +680,11 @@ body.body-dark {
             }
         }
         main{
+            .filterPage{
+                .productsBlock{
+                    grid-template-columns: auto;
+                }
+            }
             .categories{
                 margin: 5vw 0;
                 div{
