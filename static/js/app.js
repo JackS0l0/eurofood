@@ -1,11 +1,13 @@
 $('.welcomeCarusel').slick({
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 300,
+    speed: 3000,
     slidesToShow: 1,
     infinite: true,
     adaptiveHeight: true,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
 });
 $('.categories').slick({
     infinite: true,

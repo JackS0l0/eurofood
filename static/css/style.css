@@ -226,6 +226,13 @@ body main {
 }
 body main .aboutPage {
   margin: 0 3vw;
+  padding: 2vw;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 body main .breadcrumb {
   margin: 3vw;
@@ -291,7 +298,21 @@ body main .categories div .category {
   flex-direction: column;
   align-items: center;
 }
-body main .categories div .category .img {
+body main .categories div .category a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: red;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1vw;
+  padding: 2vw 4vw;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+body main .categories div .category a .img {
   background-color: #00b7e3;
   border-radius: 100%;
   width: 7vw;
@@ -302,9 +323,13 @@ body main .categories div .category .img {
   justify-content: center;
   align-items: center;
 }
-body main .categories div .category .img img {
+body main .categories div .category a .img img {
   width: 100%;
   height: 100%;
+}
+body main .categories div .category a .info {
+  display: flex;
+  justify-content: center;
 }
 body main .brandsBlock {
   margin: 1vw 3vw;
@@ -327,7 +352,6 @@ body main .welcomeCarusel {
   border-radius: 5vw 5vw 0 0;
 }
 body main .welcomeCarusel div img {
-  border-radius: 5vw 5vw 0 0;
   width: 100%;
   height: 60vh;
   -o-object-fit: cover;
@@ -429,28 +453,7 @@ body footer {
   background-size: cover;
   color: white;
   padding: 1vw;
-}
-body footer .float1 {
-  display: flex;
-}
-body footer .float1 .box {
-  width: 30vw;
-  display: flex;
-  flex-direction: column;
-  margin: 0 0.5vw;
-}
-body footer .float1 .box h1 img {
-  width: 15vw;
-}
-body footer .float1 .box .btn {
-  color: white;
-  margin: 1vw 0;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 1.4vw;
-}
-body footer .float1 .box .btn img {
-  width: 3vw;
+  margin-top: 2vw;
 }
 body footer .lastText {
   display: flex;

@@ -27,14 +27,16 @@
         <div class="categories">
             {% for post in categories %}
                 <div>
-                    <a href="{% url 'categoriesdetail' post.id %}">
-                        <div class="category">
+                    <div class="category">
+                        <a href="{% url 'categoriesdetail' post.id %}">
                             <div class="img">
                                 <img src="{{post.icon}}" alt="icon">
                             </div>
-                            <div class="name">{{post.name}}</div>
-                        </div>
-                    </a>
+                            <div class="info">
+                                <div class="name">{{post.name}}</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             {% endfor %}
         </div>
