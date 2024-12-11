@@ -8,7 +8,7 @@ from django.urls.exceptions import Resolver404
 from django.views.generic import ListView
 from django.utils import translation
 from django.db.models import Q
-from .models import About
+from .models import About,Contact
 def set_language(request, language):
     for lang, _ in settings.LANGUAGES:
         translation.activate(lang)
@@ -56,5 +56,6 @@ def about(request):
 def contact(request):
     data={
         'title': 'Contact us',
+        'contact': Contact.objects.all()[0:1],
     }
     return render(request,'contact.html',data)

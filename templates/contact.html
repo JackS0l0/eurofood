@@ -9,19 +9,9 @@
             </ol>
         </nav>
         <div class="aboutPage">
-            <div class="salesBlock">
-                <p>Məhsul sifarişi vermək üçün aşağıdakı əlaqə fastələri ilə əlaqə saxlaya bilərsiz</p>
-                <p>
-                    <a href="mailto:">sales@eurofood20.az - Sifariş verəcəyiniz siyahini bu mail vasitəsi ilə satış üzrə mütəxxəsisimizə göndərə bilərsiz</a>
-                </p>
-                <p>
-                    <a href="tel:+">+994 55 644 91 64 - Satış şöbəsi ilə bir başa əlaqə</a>
-                </p>
-            </div>
-            <hr>
-            <p>
-                <a href="mailto:">info@eurofood20.az - Şirkət və məlumat üzrə ümumi məlumatlar üçün</a>
-            </p>
+            {% for post in contact %}
+                <p>{{post.txt|safe}}</p>
+            {% endfor %}
         </div>
     </main>
 {% endblock %}
