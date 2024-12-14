@@ -3,15 +3,11 @@
 {% block main %}
     <main>
         <div class="welcomeCarusel">
-            <div>
-                <img src="../static/media/composition-with-packets-of-lays-potato-chips-2PPJ24E.jpg" alt="">
-            </div>
-            <div>
-                <img src="../static/media/food-table-1j6ik0elenqlwh4k.jpg" alt="">
-            </div>
-            <div>
-                <img src="../static/media/wp9472627.webp" alt="">
-            </div>
+            {% for post in coverImages %}
+                <div>
+                    <img src="{{post.img}}" alt="">
+                </div>
+            {% endfor %}
         </div>
         <div class="contentHead">
             <p>{% trans 'Yeni gələn məhsullar' %}</p>

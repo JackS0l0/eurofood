@@ -585,6 +585,12 @@ body.body-dark footer {
   body header .mobileSpan .mobileDropdown .dropdown button {
     font-size: 6vw;
   }
+  body main .breadcrumb {
+    font-size: 3vw;
+  }
+  body main .aboutPage {
+    font-size: 6vw;
+  }
   body main .filterPage {
     flex-direction: column;
   }

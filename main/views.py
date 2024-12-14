@@ -8,7 +8,7 @@ from django.urls.exceptions import Resolver404
 from django.views.generic import ListView
 from django.utils import translation
 from django.db.models import Q
-from .models import About,Contact
+from .models import About,Contact,CoverImages
 def set_language(request, language):
     for lang, _ in settings.LANGUAGES:
         translation.activate(lang)
@@ -32,6 +32,7 @@ def index(request):
         'products':Products.objects.all().order_by('-date')[0:8],
         'brands':Brands.objects.all(),
         'categories':Categories.objects.all(),
+        'coverImages':CoverImages.objects.all().order_by('-date'),
     }
     return render(request, 'index.html',data)
 class SearchForm(ListView):

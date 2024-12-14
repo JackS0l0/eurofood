@@ -1,6 +1,7 @@
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
-from .models import About,Contact
+from .models import About,Contact,CoverImages
+admin.site.register(CoverImages)
 @admin.register(About)
 class AboutControl(TranslationAdmin):
     group_fieldsets = True 

@@ -701,6 +701,12 @@ body.body-dark {
             }
         }
         main{
+            .breadcrumb{
+                font-size: 3vw;
+            }
+            .aboutPage{
+                font-size: 6vw;
+            }
             .filterPage{
                 flex-direction: column;
                 .webPoductsFilter{

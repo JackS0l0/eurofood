@@ -3,6 +3,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-m)$7=ine8&29ao^&7u(+cfrd0jkjpekz_sa(77@mfd#n+#a34w'
 DEBUG = True
 ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = ["eurofood20.az","https://eurofood20.az/"]
 INSTALLED_APPS = [
     'modeltranslation',
     # 'jazzmin',
