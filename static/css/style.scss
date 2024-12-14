@@ -662,6 +662,9 @@ body.body-dark {
                     display: none;
                 }
             }
+            .welcomeCaruselMob{
+                display: none;
+            }
         }
     }
 }
@@ -701,6 +704,9 @@ body.body-dark {
             }
         }
         main{
+            .welcomeCaruselWeb{
+                display: none;
+            }
             .breadcrumb{
                 font-size: 3vw;
             }

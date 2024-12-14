@@ -2,10 +2,17 @@
 {% load i18n %}
 {% block main %}
     <main>
-        <div class="welcomeCarusel">
+        <div class="welcomeCarusel welcomeCaruselWeb">
             {% for post in coverImages %}
                 <div>
                     <img src="{{post.img}}" alt="">
+                </div>
+            {% endfor %}
+        </div>
+        <div class="welcomeCarusel welcomeCaruselMob">
+            {% for post in coverImages %}
+                <div>
+                    <img src="{{post.img_mob}}" alt="">
                 </div>
             {% endfor %}
         </div>

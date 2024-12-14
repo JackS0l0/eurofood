@@ -18,6 +18,7 @@ class Contact(models.Model):
 class CoverImages(models.Model):
     name=models.CharField('Ad',max_length=200)
     img=models.URLField('Şəkil',default='')
+    img_mob=models.URLField('Mobil versiya üçün şəkil',default='')
     date=models.DateTimeField('Tarix',default=timezone.now)
     def __str__(self):
         return self.name

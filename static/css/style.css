@@ -562,6 +562,9 @@ body.body-dark footer {
   body main .filterPage .webPoductsFilter {
     display: none;
   }
+  body main .welcomeCaruselMob {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1000px) {
   body header span .theme {
@@ -584,6 +587,9 @@ body.body-dark footer {
   }
   body header .mobileSpan .mobileDropdown .dropdown button {
     font-size: 6vw;
+  }
+  body main .welcomeCaruselWeb {
+    display: none;
   }
   body main .breadcrumb {
     font-size: 3vw;
